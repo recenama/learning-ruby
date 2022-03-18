@@ -8,3 +8,18 @@ third_array << 'Chimborazo'
 puts first_array
 puts second_array
 puts third_array
+
+# iterating with each
+qualifications = %w[17 15 19 20] # %w makes values as strings
+
+sum = 0
+
+qualifications.each do |qualification|
+    puts "qualification #{qualification}"
+end
+
+qualifications.each_with_index do |qualification, position|
+    sum += qualification.to_i
+end
+
+puts "Average of your qualifications: #{sum.to_f/qualifications.length}"
