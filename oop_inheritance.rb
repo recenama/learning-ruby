@@ -1,4 +1,9 @@
 # child class inherits only from one parent class
+class Object 
+    def i_have_superpowers
+        puts "This method is using all objects"
+    end
+end
 
 class Video # parent class => It has no parent so it's inheriting of object
     attr_accessor :title
@@ -39,3 +44,7 @@ devtube.setup("Inheritance...")
 puts devtube.devtube_id
 puts devtube.embed_video
 puts devtube.title
+
+10.i_have_superpowers
+"".i_have_superpowers
+Video.i_have_superpowers
